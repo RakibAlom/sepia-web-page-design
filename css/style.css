@@ -1,23 +1,8 @@
 
 /* google fonts */
 @import url('https://fonts.google.com/specimen/Roboto');
-
 /* css variables */
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-ul{
-	list-style: none;
-}
-:root{
-	--primary-color: #08c1b8 !important;
-	--text-color: #333333 !important;
-
-	/* font-family */
-	--roboto: "Roboto";
-}
+@import url('./_variables.css');
 
 /* Start Header Area */
 .header-area .navbar{
@@ -30,7 +15,7 @@ ul{
 	height: 45px;
 }
 .header-area .navbar .fa-bars{
-	color: var(--primary-color);
+	color: #08c1b8;
 	font-size: 30px;
 }
 .header-area .navbar .nav-link{
@@ -40,7 +25,7 @@ ul{
 	position: relative;
 }
 .header-area .navbar .nav-link:hover{
-	color: var(--primary-color);
+	color: #08c1b8;
 }
 .header-area .navbar .nav-link.search:hover,
 .header-area .navbar .nav-link.button:hover{
@@ -56,14 +41,14 @@ ul{
 	width: 70%;
 	margin-left: 15%;
 	text-align: center;
-	background: var(--primary-color);
+	background: #08c1b8;
 }
 .header-area .navbar .nav-link.search:hover::after,
 .header-area .navbar .nav-link.button:hover::after{
 	background: none;
 }
 .header-area .navbar .nav-link.button{
-	background: var(--primary-color);
+	background: #08c1b8;
 	color: #fff;
 	padding: .6rem 1rem;
 	margin: 10px 15px;
@@ -98,7 +83,7 @@ ul{
 	height: 4px;
 	width: 40px;
 	margin-top: 90px;
-	background: var(--primary-color);
+	background: #08c1b8;
 }
 /* End Header-Content Area */
 
@@ -122,7 +107,7 @@ ul{
 	width: 40px;
 	left: 0;
 	bottom: 0;
-	background: var(--primary-color);
+	background: #08c1b8;
 }
 .price-area .price-content .price-text{
 	color: var(--text-color);
@@ -197,7 +182,7 @@ ul{
 	display: block;
 	margin: 2.5rem 0;
 	text-decoration: none;
-	color: var(--primary-color);
+	color: #08c1b8;
 }
 .price-area .price-panel .card-body a.read-more:hover{
 	opacity: 0.8;
@@ -208,7 +193,7 @@ ul{
 }
 .price-area .price-panel .card.best-offer .button{
 
-	background-color: var(--primary-color);
+	background-color: #08c1b8;
 }
 
 .price-area .price-footer{
@@ -219,7 +204,7 @@ ul{
 	font: normal 17px/20px "Poppings";
 }
 .price-area .price-footer span{
-	color: var(--primary-color);
+	color: #08c1b8;
 }
 /* End Price Area */
 
@@ -258,7 +243,7 @@ ul{
 	transition: .4s;
 }
 .footer-area .first-footer .social-area a:hover{
-	color: var(--primary-color);
+	color: #08c1b8;
 	background: #fff;
 }
 .footer-area .first-footer .search-bar input{
@@ -283,10 +268,10 @@ ul{
 	color: #fff;
 }
 .footer-area .first-footer .search-bar button:hover{
-	color: var(--primary-color);
+	color: #08c1b8;
 }
 .footer-area .first-footer .search-bar input:hover{
-	border: 1px solid var(--primary-color);
+	border: 1px solid #08c1b8;
 }
 
 .footer-area .last-footer{
@@ -299,7 +284,7 @@ ul{
 	line-height: 1px;=
 }
 .footer-area .last-footer span{
-	color: var(--primary-color);
+	color: #08c1b8;
 	cursor: pointer;
 }
 .footer-area .last-footer .footer-menu{
