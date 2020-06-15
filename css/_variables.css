@@ -1,0 +1,17 @@
+
+/* css variables */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+ul{
+	list-style: none;
+}
+:root{
+	--primary-color: #08c1b8 !important;
+	--text-color: #333333 !important;
+
+	/* font-family */
+	--roboto: "Roboto";
+}

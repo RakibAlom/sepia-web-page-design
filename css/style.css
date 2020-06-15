@@ -1,0 +1,374 @@
+
+/* google fonts */
+@import url('https://fonts.google.com/specimen/Roboto');
+/* css variables */
+@import url('./_variables.css');
+
+/* Start Header Area */
+.header-area .navbar{
+	padding: 0.6rem 10rem;
+	background: #fff;
+	border-bottom: 1px solid #3331;
+}
+
+.header-area .navbar .navbar-brand img{
+	height: 45px;
+}
+.header-area .navbar .fa-bars{
+	color: var(--primary-color);
+	font-size: 30px;
+}
+.header-area .navbar .nav-link{
+	font: normal 400 15px/20px "Poppins";
+	padding: 1rem 0.8rem;
+	color: #000;
+	position: relative;
+}
+.header-area .navbar .nav-link:hover{
+	color: var(--primary-color);
+}
+.header-area .navbar .nav-link.search:hover,
+.header-area .navbar .nav-link.button:hover{
+	color: #000;
+}
+.header-area .navbar .nav-link:hover::after,
+.header-area .navbar .nav-link.active::after{
+	position: absolute;
+	content: "";
+	bottom: -13px;
+	left: 0;
+	height: 4px;
+	width: 70%;
+	margin-left: 15%;
+	text-align: center;
+	background: var(--primary-color);
+}
+.header-area .navbar .nav-link.search:hover::after,
+.header-area .navbar .nav-link.button:hover::after{
+	background: none;
+}
+.header-area .navbar .nav-link.button{
+	background: var(--primary-color);
+	color: #fff;
+	padding: .6rem 1rem;
+	margin: 10px 15px;
+	font: normal 400 12px "Arial";
+}
+.header-area .navbar .nav-link.button:hover{
+	color: #fff;
+	opacity: .8;
+}
+/* End Header Area */
+
+/* Start Header-Content Area */
+.header-content{
+	background: url('../images/page-header-bg.jpg') no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 430px;
+}
+.header-content .header-text{
+	height: 100%;
+	width: 100%;
+	padding: 12rem 10rem;
+	background: rgba( 0, 0, 0 , 0.5);
+}
+.header-content .header-text h1{
+	font: normal 700 60px/80px "Poppins",sans-serif;
+	color: #fff;
+}
+.header-content .header-text h1::before{
+	position: absolute;
+	content: "";
+	height: 4px;
+	width: 40px;
+	margin-top: 90px;
+	background: var(--primary-color);
+}
+/* End Header-Content Area */
+
+/* Start Price area */
+.price-area{
+	padding: 4rem 10rem;
+}
+.price-area .price-content{
+	padding: 1.5rem 0;
+}
+.price-area .price-content .price-title{
+	font: normal 700 40px "Poppins";
+	padding: 1rem 0;
+	color: var(--text-color);
+	position: relative;
+}
+.price-area .price-content .price-title::after{
+	position: absolute;
+	content: "";
+	height: 4px;
+	width: 40px;
+	left: 0;
+	bottom: 0;
+	background: var(--primary-color);
+}
+.price-area .price-content .price-text{
+	color: var(--text-color);
+	line-height: 25px;
+}
+.price-area .price-panel{
+	padding: 4rem 0;
+}
+.price-area .price-panel .card{
+	border-radius: 0px;
+	position: relative;
+	border: none;
+	box-shadow: 0 30px 40px -10px rgba(0,0,0,.25);
+}
+
+.price-area .price-panel .card .card-img-top{
+	border-radius: 0px;
+	height: 210px;
+	z-index: 1;
+	position: relative;
+}
+.price-area .price-panel .card .img-text{
+	position: absolute;
+	padding: 3rem 0;
+	text-align: center;
+	width: 100%;
+	height: 210px;
+	background: rgba( 0, 0, 0 , 0.3);
+	color: #fff;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+.price-area .price-panel .card .img-text .fa{
+	font-size: 28px;
+}
+.price-area .price-panel .card .img-text h2{
+	font: normal 700 35px var(--roboto);
+}
+.price-area .price-panel .card .img-text p{
+	font: normal 400 16px var(--roboto);
+}
+.price-area .price-panel .card-body .price-body p{
+	margin-top: -10px;
+}
+.price-area .price-panel .card-body .price-body p .price-amount{
+	font-size: 55px;
+	font-weight: 600;
+	color: var(--text-color);
+}
+.price-area .price-panel .card-body .price-body p span.price-currency{
+	position: absolute;
+	margin-left: -15px;
+	margin-top: 15px;
+	font-size: 20px;
+	font-weight: bold;
+}
+.price-area .price-panel .card-body .feature-list{
+	padding: 1.5rem 0 3rem;
+}
+.price-area .price-panel .card-body .button{
+	padding: 1rem 2rem;
+	background-color: #222222;
+	color: #fff;
+	text-decoration: none;
+	transition: .2s;
+}
+.price-area .price-panel .card-body .button:hover{
+	opacity: 0.9;
+}
+.price-area .price-panel .card-body a.read-more{
+	display: block;
+	margin: 2.5rem 0;
+	text-decoration: none;
+	color: var(--primary-color);
+}
+.price-area .price-panel .card-body a.read-more:hover{
+	opacity: 0.8;
+}
+
+.price-area .price-panel .card.best-offer{
+	background: rgba(0, 0, 0, 0.1);
+}
+.price-area .price-panel .card.best-offer .button{
+
+	background-color: var(--primary-color);
+}
+
+.price-area .price-footer{
+	padding:  2rem 8rem;
+	text-align: center;
+}
+.price-area .price-footer p{
+	font: normal 17px/20px "Poppings";
+}
+.price-area .price-footer span{
+	color: var(--primary-color);
+}
+/* End Price Area */
+
+/* Sart Footer Area */
+.footer-area .first-footer{
+	padding: 4rem 10rem;
+	background: rgba(0,0,0,.9);
+}
+.footer-area .first-footer .footer-logo{
+	padding: 1rem 0;
+}
+.footer-area .first-footer .footer-content{
+	color: #fff;
+}
+.footer-area .first-footer .footer-content .footer-title{
+	font: normal 700 18px/20px var(--roboto);
+}
+.footer-area .first-footer .footer-content .footer-text{
+	font: normal 17px/20px var(--roboto);
+	padding: 1rem 3rem 1rem 0;
+}
+
+.footer-area .first-footer .social-area{
+	padding: 1rem 0;
+	text-align: right;
+}
+.footer-area .first-footer .social-area a{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	background: #333;
+	color: #fff;
+	border-radius: 50%;
+	transition: .4s;
+}
+.footer-area .first-footer .social-area a:hover{
+	color: var(--primary-color);
+	background: #fff;
+}
+.footer-area .first-footer .search-bar input{
+	border: none;
+	border: 1px solid #333;
+	border-radius: 0;
+	box-shadow: none;
+	background: transparent;
+	position: relative;
+}
+
+.footer-area .first-footer .search-bar button{
+	position: absolute;
+	content: "";
+	right: 10px;
+	top: 65px;
+	height: 50px;
+	width: 50px;
+	border: none;
+	background: none;
+	font-size: 20px;
+	color: #fff;
+}
+.footer-area .first-footer .search-bar button:hover{
+	color: var(--primary-color);
+}
+.footer-area .first-footer .search-bar input:hover{
+	border: 1px solid var(--primary-color);
+}
+
+.footer-area .last-footer{
+	padding: 1.5rem 10rem .5rem;
+	background: rgb(0,0,0);
+}
+.footer-area .last-footer p{
+	color: #fff;
+	font: normal 12px/12px var(--roboto);
+	line-height: 1px;=
+}
+.footer-area .last-footer span{
+	color: var(--primary-color);
+	cursor: pointer;
+}
+.footer-area .last-footer .footer-menu{
+	text-align: right;
+}
+.footer-area .last-footer .footer-menu a{
+	font: normal 13px/13px var(--roboto);
+	text-decoration: none;
+	padding: 5px;
+	color: #fff7;
+	transition: .2s;
+}
+.footer-area .last-footer .footer-menu a:hover{
+	color: #fff;
+}
+/* End Footer Area */
+
+@media(max-width: 760px){
+	.header-area .navbar{
+		padding: 0.5rem 2rem;
+	}
+	.header-area .navbar .navbar-brand img{
+		height: 45px;
+	}
+	.header-content .header-text{
+		height: 100%;
+		width: 100%;
+		padding: 12rem 6rem;
+		background: rgba( 0, 0, 0 , 0.5);
+	}
+}
+/* responsibe small size */
+@media(max-width: 560px){
+	.header-area .navbar{
+		padding: 0.5rem 2rem;
+	}
+	.header-area .navbar .navbar-brand img{
+		height: 30px;
+	}
+	.header-content{
+		height: 360px;
+	}
+	.header-content .header-text{
+		height: 100%;
+		width: 100%;
+		padding: 9rem 2rem;
+		background: rgba( 0, 0, 0 , 0.5);
+	}
+	.header-area .navbar .nav-link .fa{
+		float: right;
+	}
+	.header-area .navbar .nav-link .fa-search{
+		float: left;
+	}
+	.header-area .navbar .nav-link:hover::after,
+	.header-area .navbar .nav-link.active::after{
+		background: none;
+	}
+	.price-area{
+		padding: 2rem 1rem;
+	}
+	.price-area .price-panel{
+		padding: 2rem 2rem;
+	}
+	.price-area .price-panel .card{
+		margin-bottom: 3rem;
+	}
+	.price-area .price-footer{
+		padding:  1rem 2rem;
+	}
+	.footer-area .first-footer{
+		padding: 2rem 2rem;
+	}
+	.footer-area .first-footer .social-area{
+		text-align: center;
+	}
+	.footer-area .last-footer{
+		padding: 2rem 2rem;
+	}
+
+	.footer-area .last-footer p{
+		text-align: center;
+	}
+	.footer-area .last-footer .footer-menu{
+		text-align: center;
+	}
+}
